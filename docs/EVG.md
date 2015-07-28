@@ -22,13 +22,13 @@ Verbatim copying and distribution of this entire document is permitted in any me
 
 Upon request, the CA / Browser Forum may grant permission to make a translation of these guidelines into a language other than English.  In such circumstance, copyright in the translation remains with the CA / Browser Forum.  In the event that a discrepancy arises between interpretations of a translated version and the original English version, the original English version shall govern.  A translated version of the guidelines must prominently display the following statement in the language of the translation:-
 
-'Copyright © 2007-2015 The CA / Browser Forum, all rights reserved.
+**'Copyright © 2007-2015 The CA / Browser Forum, all rights reserved.**
 
 This document is a translation of the original English version.  In the event that a discrepancy arises between interpretations of this version and the original English version, the original English version shall govern.'
 
 A request to make a translated version of these Guidelines should be submitted to [questions@cabforum.org](mailto:questions@cabforum.org).
 
-Guidelines for the Issuance and Management of Extended Validation Certificates
+**Guidelines for the Issuance and Management of Extended Validation Certificates**
 
 This version 1.5.6 represents the Extended Validation Guidelines, as adopted by the CA/Browser Forum as of Ballot147, passed by the Forum on 25 June 2015.
 
@@ -36,15 +36,15 @@ The Guidelines describe an integrated set of technologies, protocols, identity p
 
 The primary purposes of Extended Validation Certificates are to:  1) identify the legal entity that controls a Web or service site, and 2) enable encrypted communications with that site.  The secondary purposes include significantly enhancing cybersecurity by helping establish the legitimacy of an organization claiming to operate a Web site, and providing a vehicle that can be used to assist in addressing problems related to distributing malware, phishing, identity theft, and diverse forms of online fraud.
 
-Notice to Readers
+**Notice to Readers**
 
 The Guidelines for the Issuance and Management of Extended Validation Certificates present criteria established by the CA/Browser Forum for use by certification authorities when issuing, maintaining, and revoking certain digital certificates for use in Internet Web site commerce.  These Guidelines may be revised from time to time, as appropriate, in accordance with procedures adopted by the CA/Browser Forum.  Questions or suggestions concerning these guidelines may be directed to the CA/Browser Forum at questions@cabforum.org.
 
-The CA/Browser Forum
+**The CA/Browser Forum**
 
 The CA/Browser Forum is a voluntary open organization of certification authorities and suppliers of Internet browsers and other relying-party software applications.  Membership is listed at https://cabforum.org/members/.
 
-Document History
+**Document History**
 
 | Ver. | Ballot | Description | Adopted | Effective\* |
 | --- | --- | --- | --- | --- |
@@ -70,6 +70,7 @@ Document History
 
 **TABLE OF CONTENTS**
 
+| Section & Title |
 | --- |
 | 1. Scope |
 | 2. Purpose |
