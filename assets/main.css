@@ -115,14 +115,14 @@ textarea {
 /* This section copyright Amazon.com, Inc. or its affiliates. */
 
 @page PageLayout {
-  margin-left: 2in;
-  margin-right: 2in;
+  margin-left: 1.5in;
+  margin-right: 1.5in;
 }
 
 @page {
   size: letter portrait; 
-  margin-left: 2in;
-  margin-right: 2in;
+  margin-left: 1.5in;
+  margin-right: 1.5in;
 }
 
 @page :left { 

@@ -17,7 +17,7 @@ deploy:
 	weasyprint --base-url $(HTMLBASE) $< $@
 
 %.html: %.md
-	../utils/kram.rb -t $(TEMPLATE_DIR)/main -o $@ $^
+	../utils/kram.rb -t $(TEMPLATE_DIR)/$(basename $@) -o $@ $^
 
 clean:
 	rm -f *.html *.pdf

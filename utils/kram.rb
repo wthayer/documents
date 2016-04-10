@@ -5,6 +5,34 @@ require 'kramdown'
 require 'pp'
 require 'optparse'
 
+module Kramdown::Parser::Kramdown::VarExtension
+  def handle_extension(name, opts, body, type, line_no = nil)
+    if name == "var"
+      @tree.children << Kramdown::Element.new(:template_var, nil, opts, :category => type, :location => line_no)
+      return true
+    end
+    super(name, opts, body, type, line_no)
+  end
+end
+class Kramdown::Parser::Kramdown
+  prepend Kramdown::Parser::Kramdown::VarExtension
+end
+class Kramdown::Converter::Html
+  def [](key)
+    if !@template_vars
+      return ""
+    end
+    @template_vars[key.to_s]
+  end
+  def convert_template_var(el, indent)
+    el.attr.each do |k,v|
+      @template_vars ||= {}
+      @template_vars[k] = v
+    end
+    ""
+  end
+end
+
 options = {}
 OptionParser.new do |opts|
 	opts.banner = "Usage: kram.rb [options] <input> [output]"
