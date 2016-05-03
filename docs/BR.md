@@ -817,29 +817,29 @@ CAs SHALL maintain controls to provide reasonable assurance that: physical acces
 
 ### 5.1.3 Power and air conditioning
 
-The CA shall have backup power capability sufficient to lock out input, finish any pending actions, and record the state of the equipment automatically before lack of power or air conditioning causes a shutdown.  The backup power capabilities shall support the availability requirements of Section 4.10.2.
+The CA SHALL have backup power capability sufficient to lock out input, finish any pending actions, and record the state of the equipment automatically before lack of power or air conditioning causes a shutdown.  The backup power capabilities SHALL support the availability requirements of Section 4.10.2.
 
 ### 5.1.4 Water exposures
 
-CA equipment shall be installed such that it is not in danger of exposure to water (e.g., on tables or elevated floors).  Potential water damage from fire prevention and protection measures (e.g., sprinkler systems) should be minimized.
+CA equipment SHALL be installed such that it is not in danger of exposure to water (e.g., on tables or elevated floors).  Potential water damage from fire prevention and protection measures (e.g., sprinkler systems) SHOULD be minimized.
 
 ### 5.1.5 Fire prevention and protection
 
-The CA shall comply with local commercial building codes for fire prevention and protection. 
+The CA SHALL comply with local commercial building codes for fire prevention and protection. 
 
 ### 5.1.6 Media storage
 
-Media shall be stored so as to protect it from accidental damage (water, fire, electromagnetic) and unauthorized physical access.  Media not required for daily operation or not required by policy to remain with the CA or RA that contains security audit, archive, or backup information shall be stored securely in a location separate from the CA or RA equipment.
+Media SHALL be stored so as to protect it from accidental damage (water, fire, electromagnetic) and unauthorized physical access.  Media not required for daily operation or not required by policy to remain with the CA or RA that contains security audit, archive, or backup information SHALL be stored securely in a location separate from the CA or RA equipment.
 
-Media containing private key material shall be handled, packaged, and stored in a manner compliant with the requirements for the sensitivity level of the information it protects or to which it provides access.  Storage protection of CA and RA private key material shall be consistent with stipulations in Section 5.1.2.
+Media containing private key material SHALL be handled, packaged, and stored in a manner compliant with the requirements for the sensitivity level of the information it protects or to which it provides access.  Storage protection of CA and RA private key material SHALL be consistent with stipulations in Section 5.1.2.
 
 ### 5.1.7 Waste disposal
 
-Sensitive media and documentation that are no longer needed for operations shall be destroyed in a secure manner. For example, sensitive paper documentation shall be shredded, burned, or otherwise rendered unrecoverable.
+Sensitive media and documentation that are no longer needed for operations SHALL be destroyed in a secure manner. For example, sensitive paper documentation shall be shredded, burned, or otherwise rendered unrecoverable.
 
 ### 5.1.8 Off-site backup
 
-The purpose of an off-site backup is to recover from system failure resulting from damage to the equipment or similar causes.   For components of the Certificate System operated in an online fashion, any backup necessary to recover from system failure SHALL be made at least once per week or so that no changes made prior to the last week might be lost.  Root CA Systems and other components operated in an offline fashion SHALL be backed up prior to taking them offline.  Only the latest backup needs to be retained.  The backup shall be stored at a separate site with physical and procedural controls sufficient to protect the confidentiality, integrity, and availability of the information backed up.  See Section 6.2.4 for requirements for CA private key backup. 
+The purpose of an off-site backup is to recover from system failure resulting from damage to the equipment or similar causes.   For components of the Certificate System operated in an online fashion, any backup necessary to recover from system failure SHALL be made at least once per week or so that no changes made prior to the last week might be lost.  Root CA Systems and other components operated in an offline fashion SHALL be backed up prior to taking them offline.  Only the latest backup needs to be retained.  The backup SHALL be stored at a separate site with physical and procedural controls sufficient to protect the confidentiality, integrity, and availability of the information backed up.  See Section 6.2.4 for requirements for CA private key backup. 
 
 ## 5.2 Procedural controls
 
