@@ -827,12 +827,40 @@ Based on the Risk Assessment, the CA SHALL develop, implement, and maintain a se
 
 ### 5.2.1 Trusted roles
 
+A trusted role is one whose incumbent performs functions that can introduce security problems if not carried out properly, whether accidentally or maliciously.  Trusted role operations include:
+*	The validation, authentication, and handling of information in Certificate Applications;
+*	The acceptance, rejection, or other processing of Certificate Applications, revocation requests, renewal requests, or enrollment information;
+*	The issuance, or revocation of Certificates, including personnel having access to restricted portions of its repository;
+*	Access to safe combinations and/or keys to security containers that contain materials supporting production services;
+*	Access to hardware security modules (HSMs), their associated keying material, and the secret share splits of the PINs that protect access to the HSMs;
+*	Installation, configuration, operation, and maintenance of the CA and related system operations; and
+*	The ability to grant physical and/or logical access to the CA equipment.
+
+An individual's role is defined by the responsibilities and permissions granted on the Certificate System. 
+
+Each CA or Delegated Third Party SHALL:
+a.	Follow a documented procedure for appointing individuals to Trusted Roles and assigning responsibilities to them;
+b.	Document the responsibilities and tasks assigned to Trusted Roles and implement "separation of duties" for such Trusted Roles based on the security-related concerns of the functions to be performed;
+c.	Ensure that only personnel assigned to Trusted Roles have access to Secure Zones and High Security Zones;
+d.	Ensure that an individual in a Trusted Role acts only within the scope of such role when performing administrative tasks assigned to that role;
+e.	Require employees and contractors to observe the principle of "least privilege" when accessing, or when configuring access privileges on, Certificate Systems;
+f.	Require that each individual in a Trusted Role use a unique credential created by or assigned to that person in order to authenticate to Certificate Systems;
+g.	Grant administration access to Certificate Systems only to persons acting in Trusted Roles and require their accountability for the Certificate System's security; 
+h.	Change authentication keys and passwords for any privileged account or service account on a Certificate System whenever a person's authorization to administratively access that account on the Certificate System is changed or revoked. 
+
 ### 5.2.2 Number of Individuals Required per Task
-The Private Key SHALL be backed up, stored, and recovered only by personnel in trusted roles using, at least, dual control in a physically secured environment.
+
+Where multi-party control is required, all participants shall hold a Trusted Role.  Multi-party control shall not be achieved using personnel that serve in the Internal Auditor role with the exception of audit functions.  The generation, activation, and backup of CA keys require multi-party control.  The CA or Delegated Third Party SHALL document disclose following other categories of tasks that shall require the involvement of two or more persons.
 
 ### 5.2.3 Identification and authentication for each role
 
+Each CA or Delegated Third Party SHALL:
+a.	Require that each individual in a Trusted Role use a unique credential created by or assigned to that person in order to authenticate to Certificate Systems; and
+b.	Implement multi-factor authentication to each component of the Certificate System that supports multi-factor authentication.  
+
 ### 5.2.4 Roles requiring separation of duties
+
+When performing a task that requires separation of duties or multi-person control, an individual performing a Trusted Role SHALL act in only one role throughout performance of that task.
 
 ## 5.3 Personnel controls
 
