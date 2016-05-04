@@ -839,7 +839,7 @@ Sensitive media and documentation that are no longer needed for operations SHALL
 
 ### 5.1.8 Off-site backup
 
-The purpose of an off-site backup is to recover from system failure resulting from damage to the equipment or similar causes.   For components of the Certificate System operated in an online fashion, any backup necessary to recover from system failure SHALL be made at least once per week or so that no changes made prior to the last week might be lost.  Root CA Systems and other components operated in an offline fashion SHALL be backed up prior to taking them offline.  Only the latest backup needs to be retained.  The backup SHALL be stored at a separate site with physical and procedural controls sufficient to protect the confidentiality, integrity, and availability of the information backed up.  See Section 6.2.4 for requirements for CA private key backup. 
+The purpose of an off-site backup is to recover from system failure resulting from damage to the equipment or similar causes.   For components of the Certificate System operated in an online fashion, any backup necessary to recover from system failure SHALL be made at least once per week or so that no changes made prior to the last week might be lost.  Root CA Systems and other components operated in an offline fashion SHALL be backed up prior to taking them offline.  Only the latest backup needs to be retained.  The backup SHALL be stored at a separate site with physical and procedural controls sufficient to protect the confidentiality, integrity, and availability of the information backed up.
 
 ## 5.2 Procedural controls
 
