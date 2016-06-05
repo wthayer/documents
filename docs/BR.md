@@ -1581,14 +1581,18 @@ No stipulation.
 ## 7.2 CRL profile
 
 ### 7.2.1 Version number(s)
+Version 2.
 
 ### 7.2.2 CRL and CRL entry extensions
+No stipulation. 
 
 ## 7.3 OCSP profile
 
 ### 7.3.1 Version number(s)
+Version 1.
 
 ### 7.3.2 OCSP extensions
+No stipulation. 
 
 # 8. COMPLIANCE AUDIT AND OTHER ASSESSMENTS
 The CA SHALL at all times:
