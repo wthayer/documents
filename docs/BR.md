@@ -1209,8 +1209,11 @@ No stipulation.
 ## 6.3 Other aspects of key pair management
 
 ### 6.3.1 Public key archival
+No stipulation.
 
 ### 6.3.2 Certificate operational periods and key pair usage periods
+As of the Effective Date, Root CA Certificates must be valid for at least eight (8) years but not longer than twenty-five (25) years.
+
 Subscriber Certificates issued after the Effective Date MUST have a Validity Period no greater than 60 months.
 Except as provided for below, Subscriber Certificates issued after 1 April 2015 MUST have a Validity Period no greater than 39 months.
 
