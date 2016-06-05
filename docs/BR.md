@@ -1597,10 +1597,8 @@ No stipulation.
 # 8. COMPLIANCE AUDIT AND OTHER ASSESSMENTS
 The CA SHALL at all times:
 
-1. Issue Certificates and operate its PKI in accordance with all law applicable to its business and the Certificates it issues in every jurisdiction in which it operates;
-2. Comply with these Requirements;
-3. Comply with the audit requirements set forth in this section; and
-4. Be licensed as a CA in each jurisdiction where it operates, if licensing is required by the law of such jurisdiction for the issuance of Certificates.
+1. Comply with these Requirements; and
+2. Comply with the audit requirements set forth in this section.
 
 **Implementers' Note**: Version 1.1.6 of the SSL Baseline Requirements was published on July 29, 2013. Version 2.0 of WebTrust's Principles and Criteria for Certification Authorities - SSL Baseline with Network Security and ETSI's Electronic Signatures and Infrastructures (ESI) 102 042 incorporate version 1.1.6 of these Baseline Requirements and version 1.0 of the Network and Certificate System Security Requirements. The CA/Browser Forum continues to improve the Baseline Requirements while WebTrust and ETSI also continue to update their audit criteria. We encourage all CAs to conform to each revision herein on the date specified without awaiting a corresponding update to an applicable audit criterion. In the event of a conflict between an existing audit criterion and a guideline revision, we will communicate with the audit community and attempt to resolve any uncertainty, and we will respond to implementation questions directed to questions@cabforum.org. Our coordination with compliance auditors will continue as we develop guideline revision cycles that harmonize with the revision cycles for audit criteria, the compliance auditing periods and cycles of CAs, and the CA/Browser Forum's guideline implementation dates.
 
@@ -1670,48 +1668,68 @@ During the period in which a Technically Constrained Subordinate CA issues Certi
 ## 9.1 Fees
 
 ### 9.1.1 Certificate issuance or renewal fees
+No stipulation.
 
 ### 9.1.2 Certificate access fees
+No stipulation.
 
 ### 9.1.3 Revocation or status information access fees
+No stipulation.
 
 ### 9.1.4 Fees for other services
+No stipulation.
 
 ### 9.1.5 Refund policy
+No stipulation.
 
 ## 9.2 Financial responsibility
+No stipulation.
 
 ### 9.2.1 Insurance coverage
+No stipulation.
 
 ### 9.2.2 Other assets
+No stipulation.
 
 ### 9.2.3 Insurance or warranty coverage for end-entities
+No stipulation.
 
 ## 9.3 Confidentiality of business information
 
 ### 9.3.1 Scope of confidential information
+No stipulation.
 
 ### 9.3.2 Information not within the scope of confidential information
+No stipulation.
 
 ### 9.3.3 Responsibility to protect confidential information
+No stipulation.
 
 ## 9.4 Privacy of personal information
 
 ### 9.4.1 Privacy plan
+The CA shall develop, implement and maintain a privacy plan.  The privacy plan shall document what personally identifiable information is collected, how it is stored and processed, and under what conditions the information may be disclosed.
 
 ### 9.4.2 Information treated as private
+CAs shall protect all subscriber personally identifiable information from unauthorized disclosure.
 
 ### 9.4.3 Information not deemed private
+Information included in certificates shall not be deemed private, and will not be subject to the protections outlined in Section 9.4.2.
 
 ### 9.4.4 Responsibility to protect private information
+See Section 9.4.2.
 
 ### 9.4.5 Notice and consent to use private information
+No stipulation.
 
 ### 9.4.6 Disclosure pursuant to judicial or administrative process
+The CA shall not disclose private information to any third party unless authorized by this policy, required by law, government rule or regulation, or order of a court of competent jurisdiction.  
 
 ### 9.4.7 Other information disclosure circumstances
+No stipulation.
 
 ## 9.5 Intellectual property rights
+The CA shall not knowingly violate intellectual property rights held by others.
 
 ## 9.6 Representations and warranties
 
@@ -1738,7 +1756,7 @@ The Root CA SHALL be responsible for the performance and warranties of the Subor
 
 
 ### 9.6.2 RA representations and warranties
-No stipulation.
+An RA that performs registration functions as described in this policy shall comply with the stipulations of this policy.  An RA who is found to have acted in a manner inconsistent with these obligations is subject to revocation of RA responsibilities.
 
 ### 9.6.3 Subscriber representations and warranties
 The CA SHALL require, as part of the Subscriber or Terms of Use Agreement, that the Applicant make the commitments and warranties in this section for the benefit of the CA and the Certificate Beneficiaries.
@@ -1762,10 +1780,13 @@ The Subscriber or Terms of Use Agreement MUST contain provisions imposing on the
 8. **Acknowledgment and Acceptance**: An acknowledgment and acceptance that the CA is entitled to revoke the certificate immediately if the Applicant were to violate the terms of the Subscriber or Terms of Use Agreement or if the CA discovers that the Certificate is being used to enable criminal activities such as phishing attacks, fraud, or the distribution of malware.
 
 ### 9.6.4 Relying party representations and warranties
+No stipulation.
 
 ### 9.6.5 Representations and warranties of other participants
+No stipulation.
 
 ## 9.7 Disclaimers of warranties
+CAs and Delegated Third Parties operating under this Policy shall not disclaim any responsibilities described in this Policy.
 
 ## 9.8 Limitations of liability
 For delegated tasks, the CA and any Delegated Third Party MAY allocate liability between themselves contractually as they determine, but the CA SHALL remain fully responsible for the performance of all parties in accordance with these Requirements, as if the tasks had not been delegated.
@@ -1779,38 +1800,55 @@ Notwithstanding any limitations on its liability to Subscribers and Relying Part
 ## 9.10 Term and termination
 
 ### 9.10.1 Term
+No stipulation.
 
 ### 9.10.2 Termination
+No stipulation.
 
 ### 9.10.3 Effect of termination and survival
+No stipulation.
 
 ## 9.11 Individual notices and communications with participants
+No stipulation.
 
 ## 9.12 Amendments
 
 ### 9.12.1 Procedure for amendment
+As specified in the CA/Browser Forum Bylaws at https://cabforum.org/bylaws.
 
 ### 9.12.2 Notification mechanism and period
+As specified in the CA/Browser Forum Bylaws at https://cabforum.org/bylaws.
 
 ### 9.12.3 Circumstances under which OID must be changed
+No stipulation.
 
 ## 9.13 Dispute resolution provisions
+No stipulation.
 
 ## 9.14 Governing law
+No stipulation.
 
 ## 9.15 Compliance with applicable law
+The CA SHALL at all times:
+1.	Issue Certificates and operate its PKI in accordance with all law applicable to its business and the Certificates it issues in every jurisdiction in which it operates; and
+2.	Be licensed as a CA in each jurisdiction where it operates, if licensing is required by the law of such jurisdiction for the issuance of Certificates.
 
 ## 9.16 Miscellaneous provisions
 
 ### 9.16.1 Entire agreement
+No stipulation.
 
 ### 9.16.2 Assignment
+No stipulation.
 
 ### 9.16.3 Severability
 If a court or government body with jurisdiction over the activities covered by these Requirements determines that the performance of any mandatory requirement is illegal, then such requirement is considered reformed to the minimum extent necessary to make the requirement valid and legal. This applies only to operations or certificate issuances that are subject to the laws of that jurisdiction. The parties involved SHALL notify the CA / Browser Forum of the facts, circumstances, and law(s) involved, so that the CA/Browser Forum may revise these Requirements accordingly.
 
 ### 9.16.4 Enforcement (attorneys' fees and waiver of rights)
+No stipulation.
 
 ### 9.16.5 Force Majeure
+No stipulation.
 
 ## 9.17 Other provisions
+No stipulation.
