@@ -1228,10 +1228,13 @@ e. is difficult to patch or replace without substantial economic outlay.
 ## 6.4 Activation data
 
 ### 6.4.1 Activation data generation and installation
+No stipulation.
 
 ### 6.4.2 Activation data protection
+No stipulation.
 
 ### 6.4.3 Other aspects of activation data
+No stipulation.
 
 ## 6.5 Computer security controls
 
