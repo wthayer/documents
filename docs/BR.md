@@ -1250,10 +1250,19 @@ No stipulation.
 ## 6.6 Life cycle technical controls
 
 ### 6.6.1 System development controls
+The CA or Delegated Third Party SHALL implement formal procedural controls over all changes to its Certificate Systems, including documented practices governing (a) development and review of code that will be deployed on a Certificate System and (b) testing new or modified Certificate Systems before implementing them in the production environment. [Source:    ]
 
 ### 6.6.2 Security management controls
+The CA or Delegated Third Party SHALL review configurations of Issuing Systems, Certificate Management Systems, Security Support Systems, and Front-End / Internal-Support Systems on at least a weekly basis to determine whether any changes violated the CA’s security policies. [Source: NetSec 1.h]
 
 ### 6.6.3 Life cycle security controls
+The CA or Delegated Third Party SHALL apply recommended security patches to Certificate Systems within six months of the security patch’s availability, unless the CA documents that the security patch would introduce additional vulnerabilities or instabilities that outweigh the benefits of applying the security patch. [Source: NetSec 1.l]
+
+The CA or Delegated Third Party SHALL do one of the following within 96 hours of discovery of a Critical Vulnerability not previously addressed by the CA’s vulnerability correction process:
+i.	Remediate the Critical Vulnerability;
+ii.	If remediation of the Critical Vulnerability within 96 hours is not possible, create and implement a plan to mitigate the Critical Vulnerability, giving priority to (1) vulnerabilities with high CVSS scores, starting with the vulnerabilities the CA determines are the most critical  (such as those with a CVSS score of 10.0) and (2) systems that lack sufficient compensating controls that, if the vulnerability were left unmitigated, would allow external system control, code execution, privilege escalation, or system compromise;  or
+iii.	Document the factual basis for the CA’s determination that the vulnerability does not require remediation because (a) the CA disagrees with the NVD rating, (b) the identification is a false positive, (c) the exploit of the vulnerability is prevented by compensating controls or an absence of threats; or (d) other similar reasons.  [Source: NetSec 4.f]
+
 
 ## 6.7 Network security controls
 
