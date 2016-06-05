@@ -849,11 +849,34 @@ The Private Key SHALL be backed up, stored, and recovered only by personnel in t
 ## 5.3 Personnel controls
 
 ### 5.3.1 Qualifications, experience, and clearance requirements
-Prior to the engagement of any person in the Certificate Management Process, whether as an employee, agent, or an independent contractor of the CA, the CA SHALL verify the identity and trustworthiness of such person.
+Individuals appointed to any Trusted Role SHALL be employees, contractors, or employees of a contractor of the CA and bound by terms of employment or contract, and have successfully completed an appropriate training program.   Prior to the engagement of any person in the Certificate Management Process, whether as an employee, agent, or an independent contractor of the CA, the CA SHALL verify the identity, qualifications, and trustworthiness of such person. The CA SHALL set forth its verification practices in its CPS. 
 
 ### 5.3.2 Background check procedures
+Persons fulfilling Trusted Roles SHALL pass a comprehensive background check.    
+Prior to commencement of employment in a Trusted Role, the CA SHALL conduct background checks (where possible and in accordance with local law).  The CA SHOULD consider the following during its evaluation:
+•	Confirmation of previous employment, if any;
+•	Check of professional reference;
+•	Confirmation of the highest or most relevant educational degree obtained;
+•	Search of criminal records (local, state or provincial, and national);
+•	Check of credit/financial records; and
+•	Identification verification via government-issued photo ID check.
+
+Factors revealed in a background check that should be considered grounds for rejecting candidates for Trusted Roles or for taking action against an individual currently serving in a Trusted Role generally include (but are not limited to) the following:
+•	Misrepresentations made by the individual;
+•	Highly unfavorable or unreliable professional references;
+•	Certain criminal convictions; and
+•	Indications of a lack of financial or personal responsibility.
+
+Background checks SHALL be refreshed at least every ten years.
 
 ### 5.3.3 Training Requirements and Procedures
+All personnel performing duties in Trusted Roles SHALL receive comprehensive training.  Training SHALL be conducted in the following areas:
+•	Security principles and mechanisms
+•	All PKI software relevant to their duties on the Certificate System
+•	All PKI duties they are expected to perform
+•	Disaster recovery and business continuity procedures
+•	Relevant stipulations of this policy
+
 The CA SHALL provide all personnel performing information verification duties with skills-training that covers basic Public Key Infrastructure knowledge, authentication and vetting policies and procedures (including the CA's Certificate Policy and/or Certification Practice Statement), common threats to the information verification process (including phishing and other social engineering tactics), and these Requirements.
 
 The CA SHALL maintain records of such training and ensure that personnel entrusted with Validation Specialist duties maintain a skill level that enables them to perform such duties satisfactorily.
@@ -863,16 +886,21 @@ The CA SHALL document that each Validation Specialist possesses the skills requi
 The CA SHALL require all Validation Specialists to pass an examination provided by the CA on the information verification requirements outlined in these Requirements.
 
 ### 5.3.4 Retraining frequency and requirements
-All personnel in Trusted roles SHALL maintain skill levels consistent with the CA's training and performance programs.
+All personnel in Trusted roles SHALL maintain skill levels consistent with the CA's training and performance programs.  Retraining SHALL take place whenever a significant change to the Certificate System, policies, or procedures occur.   
+
+Documentation SHALL be maintained identifying all personnel who received training and the level of training completed.
 
 ### 5.3.5 Job rotation frequency and sequence
+No stipulation.
 
 ### 5.3.6 Sanctions for unauthorized actions
+Appropriate administrative and disciplinary actions as documented in organization policy shall be taken against personnel who perform unauthorized actions (i.e., not permitted by this CP or other policies) involving the CA’s systems, the certificate status verification systems, and the repository. Disciplinary actions may include measures up to and including termination and shall be commensurate with the frequency and severity of the unauthorized actions. 
 
 ### 5.3.7 Independent Contractor Controls
-The CA SHALL verify that the Delegated Third Party's personnel involved in the issuance of a Certificate meet the training and skills requirements of Section 5.3.3 and the document retention and event logging requirements of Section 5.4.1.
+Contractor personnel filling trusted roles shall be subject to all requirements stipulated in this document.
 
 ### 5.3.8 Documentation supplied to personnel
+Documentation sufficient to perform duties and procedures for each Trusted Rrole shall be provided to the personnel filling that Trusted Role.
 
 ## 5.4 Audit logging procedures
 
