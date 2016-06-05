@@ -1172,10 +1172,13 @@ Root CA Private Keys MUST NOT be used to sign Certificates except in the followi
 The CA SHALL implement physical and logical safeguards to prevent unauthorized certificate issuance. Protection of the Private Key outside the validated system or device specified above MUST consist of physical security, encryption, or a combination of both, implemented in a manner that prevents disclosure of the Private Key. The CA SHALL encrypt its Private Key with an algorithm and key-length that, according to the state of the art, are capable of withstanding cryptanalytic attacks for the residual life of the encrypted key or key part.
 
 ### 6.2.1 Cryptographic module standards and controls
+As specified in Section 6.2.7.
 
 ### 6.2.2 Private key (n out of m) multi-person control
+No stipulation.
 
 ### 6.2.3 Private key escrow
+No stipulation.
 
 ### 6.2.4 Private key backup
 See Section 5.2.2.
@@ -1190,12 +1193,18 @@ If the Issuing CA generated the Private Key on behalf of the Subordinate CA, the
 The CA SHALL protect its Private Key in a system or device that has been validated as meeting at least FIPS 140 level 3 or an appropriate Common Criteria Protection Profile or Security Target, EAL 4 (or higher), which includes requirements to protect the Private Key and other assets against known threats.
 
 ### 6.2.8 Activating Private Keys
+No stipulation.
 
 ### 6.2.9 Deactivating Private Keys
+No stipulation.
 
 ### 6.2.10 Destroying Private Keys
+CAs SHALL instruct their Subscribers to destroy their Private Keys when they are no longer needed or in use. 
+
+Individuals in Trusted Roles SHALL destroy private keys used on Certificate Systems when they are no longer needed or in use.
 
 ### 6.2.11 Cryptographic Module Capabilities
+No stipulation.
 
 ## 6.3 Other aspects of key pair management
 
