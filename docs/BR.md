@@ -1242,7 +1242,10 @@ No stipulation.
 
 The CA SHALL enforce multi-factor authentication for all accounts capable of directly causing certificate issuance.
 
+Sections 1.a, 1.k, 2.e, 2.g through 2.m, 3.a, and 4.a of the Network and Certificate System Security Requirements are incorporated herein by reference. 
+
 ### 6.5.2 Computer security rating
+No stipulation.
 
 ## 6.6 Life cycle technical controls
 
