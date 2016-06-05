@@ -1266,6 +1266,29 @@ iii.	Document the factual basis for the CA’s determination that the vulnerabil
 
 ## 6.7 Network security controls
 
+### 6.7.1.	Isolation of Networked Systems
+Each CA or Delegated Third Party SHALL segment Certificate Systems into networks or zones based on their functional, logical, and physical (including location) relationship. [Source: NetSec 1.a]
+
+### 6.7.2.	Boundary Systems
+Each CA or Delegated Third Party SHALL apply the same security controls to all systems co-located in the same zone with a Certificate System. [Source: NetSec 1.b]
+
+#### 6.7.2.1.	PKI Network Zones Overview
+	
+Each CA or Delegated Third Party SHALL maintain and protect Issuing Systems, Certificate Management Systems, and Security Support Systems in at least a Secure Zone; [Source: NetSec 1.d]
+
+Each CA SHALL maintain Root CA Systems in a High Security Zone and in an offline state or air-gapped from all other networks. [Source: NetSec 1.c]
+
+#### 6.7.2.2.	Special Access Zone Boundary
+Each CA or Delegated Third Party SHALL ensure that only personnel assigned to Trusted Roles have access to Secure Zones and High Security Zones.  [Source: NetSec 2.c]
+
+#### 6.7.2.3.	Restricted Zone Boundary
+Each CA or Delegated Third Party SHALL configure each network boundary control (firewall, switch, router, gateway, or other network control device or system) with rules that support only the services, protocols, ports, and communications that the CA has identified as necessary to its operations.  [Source: NetSec 1.f]
+
+Each CA or Delegated Third Party SHALL configure Issuing Systems, Certificate Management Systems, Security Support Systems, and Front-End / Internal-Support Systems by removing or disabling all accounts, applications, services, protocols, and ports that are not used in the CA’s or Delegated Third Party’s operations and allowing only those that are approved by the CA or Delegated Third Party. [Source: NetSec 1.g]
+
+#### 6.7.2.4.	Operational Zone Boundary
+Implement and configure Security Support Systems that protect systems and communications between systems inside Secure Zones and High Security Zones, and communications with non-Certificate Systems outside those zones (including those with organizational business units that do not provide PKI-related services) and those on public networks.  [Source: NetSec 1.e]
+
 ## 6.8 Time-stamping
 
 # 7. CERTIFICATE, CRL, AND OCSP PROFILES
