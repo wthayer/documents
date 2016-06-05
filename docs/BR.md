@@ -417,16 +417,24 @@ The CA shall make its Repository publicly available in a read-only manner.
 ## 3.1 Naming
 
 ### 3.1.1 Types of names
+The CA SHALL use an X.501 Distinguished Name (DN).   Names SHALL conform to the requirements and be verified as specified in other parts of this document. 
 
 ### 3.1.2 Need for names to be meaningful
+Names used in certificates must represent an unambiguous identifier for the subject. Names shall be meaningful enough for a human to identify the named entity, irrespective of whether the entity is a person, machine, or process. 
+
+Names used for CAs SHALL be meaningful and shall not include a personal name, but rather shall identify the subject as a CA and, if applicable, include the name-space for which the CA is authoritative.    Also, the subject name in a CA certificate MUST match the issuer name in certificates that it issues, as required by RFC 5280.
 
 ### 3.1.3 Anonymity or pseudonymity of subscribers
+No stipulation.
 
 ### 3.1.4 Rules for interpreting various name forms
+No stipulation.
 
 ### 3.1.5 Uniqueness of names
+Names for Root CAs must be unique.   Each CA must ensure that each of its subscribers is identifiable by a unique name.  The CPS shall identify the method for the assignment of unique subject names.  
 
 ### 3.1.6 Recognition, authentication, and role of trademarks
+CAs SHALL not issue a certificates knowing that it infringes on a trademark of another.
 
 ## 3.2 Initial identity validation
 
