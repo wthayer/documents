@@ -932,6 +932,8 @@ The CA SHALL record at least the following events:
   e. Firewall and router activities; and
   f. Entries to and exits from the CA facility.
 
+4. 	Appointment of personnel to Trusted Roles.
+
 Log entries MUST include the following elements:
 
 1. Date and time of entry;
@@ -939,24 +941,37 @@ Log entries MUST include the following elements:
 3. Description of the entry.
 
 ### 5.4.2 Frequency for Processing and Archiving Audit Logs
+The CA or Delegated Third Party SHALL conduct a human review of application and system logs at least every 30 days and validate the integrity of logging processes and ensure that monitoring, logging, alerting, and log-integrity-verification functions are operating properly. The CA or Delegated Third Party MAY use in-house or third-party audit log reduction and analysis tools to perform this task.
+
+Portions of audit logs designated for archival SHALL be archived at least annually.
 
 ### 5.4.3 Retention Period for Audit Logs
-The CA SHALL retain any audit logs generated for at least seven years. The CA SHALL make these audit logs available to its Qualified Auditor upon request.
+The CA SHALL retain any audit logs generated for at least four years. The CA SHALL make these audit logs available to its Qualified Auditor upon request.
 
 ### 5.4.4 Protection of Audit Log
+Security audit data SHALL only be deleted or modified by personnel who perform security audit processing.  Other personnel in trusted roles MAY have read access to security audit data.  
+ 
+Electronic logs SHALL be protected to prevent alteration and detect tampering. 
+
+Physical logbooks SHALL implement controls to allow for the detection of the removal of pages or deletion of entries. 
 
 ### 5.4.5 Audit Log Backup Procedures
+Security audit data SHALL be moved to a safe, secure storage location separate from the location where the data was generated.
 
 ### 5.4.6 Audit Log Accumulation System (internal vs. external)
+Automated audit processes SHALL be invoked at system or application startup, and cease only at system or application shutdown. Audit collection systems SHALL be configured such that security audit data is protected against loss (e.g., overwriting or overflow of automated log files). A component SHALL not continue operations unless its audit system is functioning. 
 
 ### 5.4.7 Notification to event-causing subject
+No stipulation.
 
 ### 5.4.8 Vulnerability assessments
-Additionally, the CA's security program MUST include an annual Risk Assessment that:
+Certification Authorities and Delegated Third Parties SHALL implement an annual risk assessment process that:
 
 1. Identifies foreseeable internal and external threats that could result in unauthorized access, disclosure, misuse, alteration, or destruction of any Certificate Data or Certificate Management Processes;
 2. Assesses the likelihood and potential damage of these threats, taking into consideration the sensitivity of the Certificate Data and Certificate Management Processes; and
 3. Assesses the sufficiency of the policies, procedures, information systems, technology, and other arrangements that the CA has in place to counter such threats.
+4.  Documents and involves a risk treatment / vulnerability correction process that addresses the identification, review, response, and remediation of vulnerabilities; and
+5.  Performs a Vulnerability Scan (i) after any system or network changes that the CA determines are significant, and (ii) at least once per quarter, on public and private IP addresses identified by the CA or Delegated Third Party as the CA’s or Delegated Third Party’s Certificate Systems. [Source:NetSec 4.b and 4.c]
 
 ## 5.5 Records archival
 
