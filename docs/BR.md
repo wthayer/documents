@@ -976,21 +976,44 @@ Certification Authorities and Delegated Third Parties SHALL implement an annual 
 ## 5.5 Records archival
 
 ### 5.5.1 Types of records archived
+Archive records SHALL be sufficiently detailed to determine the proper operation of the Certificate System and the validity of any certificate (including those revoked or expired) issued by the CA.  At a minimum, the following data shall be recorded for archive:
+	
+•	Certificate policies and certification practice statements
+•	System and equipment configuration
+•	Subscriber agreements and subscriber identity validation data 
+•	All certificates 
+•	Certificate requests and revocation requests
+•	Certificate status information
+•	Portions of audit logs designated for archival
+•	Compliance Auditor reports
+•	Any changes to the audit parameters (e.g. audit frequency, type of event audited, etc.) and any attempt to delete or modify the audit logs
+•	Information relevant to changes to the trusted public keys, including additions and deletions (i.e. requests submitted to Application Software Suppliers)
+•	Violations of Certificate Policy or Certification Practice Statement
+•	Remedial action taken as a result of violations of physical security
+•	Other data or applications necessary to verify archive contents
 
 ### 5.5.2 Retention period for archive
 The CA SHALL retain all documentation relating to certificate requests and the verification thereof, and all Certificates and revocation thereof, for at least seven years after any Certificate based on that documentation ceases to be valid.
 
 ### 5.5.3 Protection of archive
+Archive media SHALL be maintained in a safe, secure storage facility separate from the Certificate System with physical and procedural security controls sufficient to protect the integrity of the archive records.  If the original media cannot retain the data for the required period, a mechanism to periodically transfer the archived data to new media SHALL be identified by the CA.  
+
+The CA SHALL designate an authorized administrator of the archive.  No one other than authorized administrators shall be permitted to write to, modify, or delete the archive.  
 
 ### 5.5.4 Archive backup procedures
+No stipulation.
 
 ### 5.5.5 Requirements for time-stamping of records
+No stipulation.
 
 ### 5.5.6 Archive collection system (internal or external)
+No stipulation.
 
 ### 5.5.7 Procedures to obtain and verify archive information
+No stipulation.
 
 ## 5.6 Key changeover
+No stipulation.
 
 ## 5.7 Compromise and disaster recovery
 
