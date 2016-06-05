@@ -542,8 +542,10 @@ The CA SHALL disclose all Cross Certificates that identify the CA as the Subject
 Section 6.3.2 limits the validity period of Subscriber Certificates. The CA MAY use the documents and data provided in Section 3.2 to verify certificate information, provide that the CA obtained the data or document from a source specified under Section 3.2 no more than thirty-nine (39) months prior to issuing the Certificate.
 
 ### 3.3.2 Identification and authentication for re-key after revocation
+No stipulation.
 
 ## 3.4 Identification and authentication for revocation request
+The CA or Delegated Third Party SHALL identify and authenticate the person making a revocation request.  The identification and authentication process will vary depending on whether the revocation request is submitted by the Subscriber or a third party.  Further details on who can submit a revocation request and how it is processed appear in Section 4.9.
 
 # 4. CERTIFICATE LIFE-CYCLE OPERATIONAL REQUIREMENTS
 
