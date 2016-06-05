@@ -1018,9 +1018,9 @@ No stipulation.
 ## 5.7 Compromise and disaster recovery
 
 ### 5.7.1 Incident and compromise handling procedures
-CA organizations shall have an Incident Response Plan and a Disaster Recovery Plan.
+CAs shall have an Incident Response Plan and a Disaster Recovery Plan.
 
-The CA SHALL document a business continuity and disaster recovery procedures designed to notify and reasonably protect Application Software Suppliers, Subscribers, and Relying Parties in the event of a disaster, security compromise, or business failure. The CA is not required to publicly disclose its business continuity plans but SHALL make its business continuity plan and security plans available to the CA's auditors upon request. The CA SHALL annually test, review, and update these procedures.
+The CA SHALL document business continuity and disaster recovery procedures designed to notify and reasonably protect Application Software Suppliers, Subscribers, and Relying Parties in the event of a disaster, security compromise, or business failure. The CA is not required to publicly disclose its business continuity plans but SHALL make its business continuity plan and security plans available to the CA's auditors upon request. The CA SHALL annually test, review, and update these procedures.
 
 The business continuity plan MUST include:
 
@@ -1041,12 +1041,21 @@ The business continuity plan MUST include:
 15. Procedures for securing its facility to the extent possible during the period of time following a disaster and prior to restoring a secure environment either at the original or a remote site.
 
 ### 5.7.2 Recovery Procedures if Computing resources, software, and/or data are corrupted
+If the CA or a Delegated Third Party determines that a computing resource, software, or data has been corrupted, it SHALL: (a) investigate the cause and whether the event constitutes a security incident or compromise, and (b) determine whether data or data integrity has been irretrievably lost.  If either is the case, then the CA SHALL respond according to Section 5.7.1. 
 
-### 5.7.3 Recovery Procedures after Key Compromise
+### 5.7.3 CA Key Compromise Procedures
+In the event of a Root CA or Intermediate CA private key compromise, the CA SHALL notify all Browser Members of the Forum and all cross-certified PKIs in the manner that they define.   Initiation of notification SHALL be made at the earliest feasible time and SHALL NOT exceed 24 hours beyond determination of compromise or loss unless otherwise required by law enforcement. 
+	
+### 5.7.4.	Business Continuity Capabilities after a Disaster
+In accordance with See Section 5.7.1, the CA SHALL maintain a disaster recovery plan .that identifies the procedures to mitigate risks to environmental controls, procedures for annual testing of processes to restore service, individuals on call for this type of activity, and the order of restoral of equipment and services.
 
-### 5.7.4 Business continuity capabilities after a disaster
-
-## 5.8 CA or RA termination
+## 5.8.	CA OR RA TERMINATION
+Prior to terminating CA or RA operations, the CA or Delegated Third Party SHALL provide reasonable advance notice to all affected parties.  If arrangements have not been made to transfer all operations to a qualified successor entity, then:
+•	The CA shall issue a CRL revoking all unexpired certificates prior to termination.  This CRL shall be available until all certificates issued by the CA expire.
+•	The CA or Delegated Third Party SHALL archive all audit logs and other records prior to termination
+•	The CA or Delegated Third Party SHALL destroy all private keys upon termination
+•	The archive records shall be transferred to an appropriate authority specified in the CPS
+•	If a Root CA is terminated, the Root CA shall use secure means to notify Browser Members of the Forum to delete all trust anchors representing the terminated CA.
 
 # 6. TECHNICAL SECURITY CONTROLS
 
