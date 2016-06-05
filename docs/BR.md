@@ -524,6 +524,7 @@ The CA SHALL verify the Applicant's address using a form of identification that 
 The CA SHALL verify the certificate request with the Applicant using a Reliable Method of Communication.
 
 ### 3.2.4 Non-verified subscriber information
+Except as allowed for OU fields by section 7.1.4.2.2.h (Subject Distinguished Name Fields), information that is not verified shall not be included in certificates.
 
 ### 3.2.5 Validation of authority
 If the Applicant for a Certificate containing Subject Identity Information is an organization, the CA SHALL use a Reliable Method of Communication to verify the authenticity of the Applicant Representative's certificate request.
