@@ -7,15 +7,15 @@
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 
-**Scope and Applicability:**  These Network and Certificate System Security Requirements (Requirements) apply to all publicly trusted Certification Authorities (CAs) and are adopted with the intent that all such CAs and Delegated Third Parties be audited for conformity with these Requirements as soon as they have been incorporated as mandatory requirements (if not already mandatory requirements) in the root embedding program for any major Internet browsing client and that they be incorporated into the WebTrust Service Principles and Criteria for Certification Authorities,  ETSI 101 456, and ETSI TS 102 042, including revisions and implementations thereof, including any audit scheme that purports to determine conformity therewith.  In these Requirements, the CA is responsible for all tasks performed by Delegated Third Parties and Trusted Roles, and the CA SHALL define, document, and disclose to its auditors (a) the tasks assigned to Delegated Third Parties or Trusted Roles, and (b) the arrangements made with Delegated Third parties to ensure compliance with these Requirements, and (c) the relevant practices implemented by Delegated Third Parties. 
+**Scope and Applicability:**  These Network and Certificate System Security Requirements (Requirements) apply to all publicly trusted Certification Authorities (CAs) and are adopted with the intent that all such CAs and Delegated Third Parties be audited for conformity with these Requirements as soon as they have been incorporated as mandatory requirements (if not already mandatory requirements) in the root embedding program for any major Internet browsing client and that they be incorporated into the WebTrust Service Principles and Criteria for Certification Authorities and ETSI EN 319 411, including revisions and implementations thereof, including any audit scheme that purports to determine conformity therewith.  In these Requirements, the CA is responsible for all tasks performed by Delegated Third Parties and Trusted Roles, and the CA SHALL define, document, and disclose to its auditors (a) the tasks assigned to Delegated Third Parties or Trusted Roles, and (b) the arrangements made with Delegated Third parties to ensure compliance with these Requirements, and (c) the relevant practices implemented by Delegated Third Parties. 
 
 # 1. GENERAL PROTECTIONS FOR THE NETWORK AND SUPPORTING SYSTEMS
 
 Each CA or Delegated Third Party SHALL:
 
-a.	Segment Certificate Systems into networks or zones based on their functional, logical, and physical (including location) relationship;
+a.	Segment, subnet, or VLAN Certificate Management  Systems into networks based on their functional or logical relationship;
 
-b.	Apply the same security controls to all systems co-located in the same zone with a Certificate System;
+b.	Apply equivalent security controls to all systems co-located in the same subnet;
 
 c.	Maintain Root CA Systems in a High Security Zone and in an offline state or air-gapped from all other networks;
 
@@ -92,17 +92,17 @@ e.	Conduct a human review of application and system logs at least every 30 days 
 
 f.	Maintain, archive, and retain logs in accordance with disclosed business practices and applicable legislation.
 
-# 4.	VULNERABILITY DETECTION AND PATCH MANAGMENT
+# 4.	VULNERABILITY DETECTION AND PATCH MANAGEMENT
 
 Certification Authorities and Delegated Third Parties SHALL:
 
-a.	Implement detection and prevention controls under the control of CA or Delegated Third Party Trusted Roles to protect Certificate Systems against viruses and malicious software;
+a.	Implement detection and prevention controls under the control of CA or Delegated Third Party Trusted Roles to protect Certificate Systems against unauthorized software or changes to software;
 
 b.	Document and follow a vulnerability correction process that addresses the identification, review, response, and remediation of vulnerabilities; 
 
-c.	Undergo or perform a Vulnerability Scan (i) within one week of receiving a request from the CA/Browser Forum, (ii) after any system or network changes that the CA determines are significant, and (iii) at least once per quarter, on public and private IP addresses identified by the CA or Delegated Third Party as the CA’s or Delegated Third Party’s Certificate Systems;
+c.	Undergo or perform a Vulnerability Scan (i) after any system or network changes that the CA determines are significant, and (ii) at least once per quarter, on public and private IP addresses identified by the CA or Delegated Third Party as the CA’s or Delegated Third Party’s Certificate Systems;
 
-d.	Undergo a Penetration Test on the CA’s and each Delegated Third Party’s Certificate Systems on at least an annual basis and after infrastructure or application upgrades or modifications that the CA determines are significant;
+d.	Undergo a Penetration Test on the CA’s and each Delegated Third Party’s Certificate Systems on at least an annual basis;
 
 e.	Record evidence that each Vulnerability Scan and Penetration Test was performed by a person or entity (or collective group thereof) with the skills, tools, proficiency, code of ethics, and independence necessary to provide a reliable Vulnerability Scan or Penetration Test; and
 f.	Do one of the following within 96 hours of discovery of a Critical Vulnerability not previously addressed by the CA’s vulnerability correction process:
@@ -111,30 +111,26 @@ f.	Do one of the following within 96 hours of discovery of a Critical Vulnerabil
     
     ii.	If remediation of the Critical Vulnerability within 96 hours is not possible, create and implement a plan to mitigate the Critical Vulnerability, giving priority to (1) vulnerabilities with high CVSS scores, starting with the vulnerabilities the CA determines are the most critical  (such as those with a CVSS score of 10.0) and (2) systems that lack sufficient compensating controls that, if the vulnerability were left unmitigated, would allow external system control, code execution, privilege escalation, or system compromise;  or
     
-    iii.	Document the factual basis for the CA’s determination that the vulnerability does not require remediation because (a) the CA disagrees with the NVD rating, (b) the identification is a false positive, (c) the exploit of the vulnerability is prevented by compensating controls or an absence of threats; or (d) other similar reasons.
+    iii.	Document the factual basis for the CA’s determination that the vulnerability does not require remediation because (a) the CA disagrees with the CVSS score, (b) the identification is a false positive, (c) the exploit of the vulnerability is prevented by compensating controls or an absence of threats; or (d) other similar reasons.
 
 # DEFINITIONS
-**Certificate Management System:**   A system used by a CA or Delegated Third Party to process, approve issuance of, or store certificates or certificate status information, including the database, database server, and storage.
+**Certificate Management System:**   A system used by a CA to process, approve issuance of, or store certificates or certificate status information, including the database, database server, and storage.
 
-**Certificate Systems:**  The system used by a CA or Delegated Third Party in providing identity verification, registration and enrollment, certificate approval, issuance, validity status, support, and other PKI-related services.
+**Certificate Systems:**  The system used by a CA or Delegated Third Party in providing domain control verification or certificate issuance.
 
-**Common Vulnerability Scoring System (CVSS):**  A quantitative model used to measure the base level severity of a vulnerability (see http://nvd.nist.gov/home.cfm). 
+**Common Vulnerability Scoring System (CVSS):**  A quantitative model used to measure the base level severity of a vulnerability (see https://www.first.org/cvss). 
 
 **Critical Security Event:**  Detection of an event, a set of circumstances, or anomalous activity that could lead to a circumvention of a Zone’s security controls or a compromise of a Certificate System’s integrity, including excessive login attempts, attempts to access prohibited resources, DoS/DDoS attacks, attacker reconnaissance, excessive traffic at unusual hours, signs of unauthorized access, system intrusion, or an actual compromise of component integrity.
 
-**Critical Vulnerability:**  A system vulnerability that has a CVSS score of 7.0 or higher according to the NVD or an equivalent to such CVSS rating (see http://nvd.nist.gov/home.cfm), or as otherwise designated as a Critical Vulnerability  by the CA or the CA/Browser Forum.
+**Critical Vulnerability:**  A system vulnerability that has a CVSS score of 9.0 or higher according to FIRST.org, or as otherwise designated as a Critical Vulnerability by the CA or a CA/Browser Forum Ballot.
 
 **Delegated Third Party:**   A natural person or legal entity that is not the CA and that operates any part of a Certificate System.  
-
-**Delegated Third Party System:** Any part of a Certificate System used by a Delegated Third Party while performing the functions delegated to it by the CA.
 
 **Front End / Internal Support System:**  A system with a public IP address, including a web server, mail server, DNS server, jump host, or authentication server.  
 
 **High Security Zone:**  A physical location where a CA’s or Delegated Third Party’s Private Key or cryptographic hardware is located.
 
-**Issuing System:**  A system used to sign certificates or validity status information. 
-
-**National Vulnerability Database (NVD):**   A database that includes the Common Vulnerability Scoring System (CVSS) scores of security-related software flaws, misconfigurations, and vulnerabilities associated with systems (see http://nvd.nist.gov/home.cfm). 
+**Issuing System:**  A system used to sign certificates. 
 
 **OWASP Top Ten:**  A list of application vulnerabilities published by the Open Web Application Security Project (see https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project).
 
@@ -144,7 +140,7 @@ f.	Do one of the following within 96 hours of discovery of a Critical Vulnerabil
 
 **SANS Top 25:**  A list created with input from the SANS Institute and the Common Weakness Enumeration (CWE) that identifies the Top 25 Most Dangerous Software Errors that lead to exploitable vulnerabilities (see http://www.sans.org/top25-software-errors/).
 
-**Secure Zone:**  An area (physical or logical) protected by physical and logical controls that appropriately protect the confidentiality, integrity, and availability of Certificate Systems. 
+**Secure Zone:**  A physical area protected by physical and logical controls that appropriately protect the confidentiality, integrity, and availability of Certificate Systems. 
 
 **Security Support System:**   A system used to provide security support functions, such as authentication, network boundary control, audit logging, audit log reduction and analysis, vulnerability scanning, and anti-virus.
 
@@ -152,6 +148,6 @@ f.	Do one of the following within 96 hours of discovery of a Critical Vulnerabil
 
 **Trusted Role:**  An employee or contractor of a CA or Delegated Third Party who has authorized access to or control over a Secure Zone or High Security Zone.
 
-**Vulnerability Scan:**  A process that uses manual or automated tools to probe internal and external systems to check and report on the status of operating systems, services, and devices exposed to the network and the presence of vulnerabilities listed in the NVD, OWASP Top Ten, or SANS Top 25. 
+**Vulnerability Scan:**  A process that uses manual or automated tools to probe internal and external systems to check and report on the status of operating systems, services, and devices exposed to the network and the presence of vulnerabilities. 
 
-**Zone:**  A subset of Certificate Systems created by the logical or physical partitioning of systems from other Certificate Systems.
+**Zone:**  A physical area created by physical partitioning.
