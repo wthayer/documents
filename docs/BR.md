@@ -864,7 +864,7 @@ The CA SHALL revoke a Certificate within 24 hours if:
 2. The Subscriber notifies the CA that the original certificate request was not authorized and does not retroactively grant authorization;
 3. The CA obtains evidence that the Subscriber's Private Key corresponding to the Public Key in the Certificate suffered a Key Compromise.
 
-The CA SHOULD revoke the certificate within 24 hours and MUST revoke a Certificate within seven days if one or more of the following occurs:
+The CA SHOULD revoke a certificate within 24 hours and MUST revoke a Certificate within 14 days if one or more of the following occurs:
 
 1. The Certificate no longer complies with the requirements of Sections 6.1.5 and 6.1.6;
 2. The CA obtains evidence that the Certificate was misused;
@@ -879,7 +879,9 @@ CA's Certificate Policy or Certification Practice Statement;
 10. The CA's right to issue Certificates under these Requirements expires or is revoked or terminated, unless the CA has made arrangements to continue maintaining the CRL/OCSP Repository;
 11. The CA is made aware of a possible compromise of the Private Key of the Subordinate CA used for issuing the Certificate;
 12. Revocation is required by the CA's Certificate Policy and/or Certification Practice Statement; or
-13. The technical content or format of the Certificate presents an unacceptable risk to Application Software Suppliers or Relying Parties (e.g. the CA/Browser Forum might determine that a deprecated cryptographic/signature algorithm or key size presents an unacceptable risk and that such Certificates should be revoked and replaced by CAs within a given period of time).
+13. The technical content or format of the Certificate presents an unacceptable risk to Application Software Suppliers or Relying Parties (e.g. the CA/Browser Forum might determine that a deprecated cryptographic/signature algorithm or key size presents an unacceptable risk and that such Certificates should be revoked and replaced by CAs within a given period of time);
+14. The CA is made aware of a vulnerability that exposes the Subscriber's Private Key to compromise;
+15. The CA is made aware that the Subscriber's Private Key is being publicly distributed in a software package.
 
 #### 4.9.1.2 Reasons for Revoking a Subordinate CA Certificate
 The Issuing CA SHALL revoke a Subordinate CA Certificate within seven (7) days if one or more of the following occurs:
@@ -907,13 +909,7 @@ The CA SHALL publicly disclose an email address through its online repository th
 No stipulation.
 
 ### 4.9.5 Time within which CA must process the revocation request
-Within 24 hours after receiving a Certificate Problem Report, the CA SHALL investigate the facts and circumstances related to a Certificate Problem Report and provide a preliminary report on its findings to both the Subscriber and the entity who filed the Certificate Problem Report.  The CA SHALL provide a final determination on the Certificate Problem Report within the earliest of the following timelines:
-
-Within 24 hours after receiving notice that a Private Key was compromised or publicly disclosed,
-Within 24 hours after receiving notification that the Certificate requested was not authorized by the Subscriber and the Subscriber does not retroactively grant authorization, or
-Within seven business days after receiving a Certificate Problem Report alleging any other problem with the certificate.
-
-If there is a delay of more than seven days in providing a final determination of a Certificate Problem Report, the CA SHALL notify the Subscriber and entity providing the Certificate Problem Report about the reason for the delay and include the reason for delay in any final report provided. 
+Within 24 hours after receiving a Certificate Problem Report, the CA SHALL investigate the facts and circumstances related to a Certificate Problem Report and provide a report on its findings to both the Subscriber and the entity who filed the Certificate Problem Report.
 
 After reviewing the facts and circumstances, the CA SHALL work with any entity reporting the Certificate Problem Report or other revocation-related notice to establish a date when the CA will revoke the Certificate which MUST not exceed the time frame set forth in Section 4.9.1.1. The date selected by the CA SHOULD consider the following criteria:
 
