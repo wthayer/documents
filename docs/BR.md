@@ -860,7 +860,7 @@ No stipulation.
 #### 4.9.1.1 Reasons for Revoking a Subscriber Certificate
 The CA SHALL revoke a Certificate within 24 hours if:
 
-1. The Subscriber requests in writing that the CA revoke the Certificate;
+1. The Subscriber or Domain Name Registrant requests in writing that the CA revoke the Certificate;
 2. The Subscriber notifies the CA that the original certificate request was not authorized and does not retroactively grant authorization;
 3. The CA obtains evidence that the Subscriber's Private Key corresponding to the Public Key in the Certificate suffered a Key Compromise.
 
@@ -903,7 +903,7 @@ The Subscriber, RA, or Issuing CA can initiate revocation. Additionally, Subscri
 ### 4.9.3 Procedure for revocation request
 The CA SHALL provide a process for Subscribers to request revocation of their own Certificates. The process MUST be described in the CA's Certificate Policy or Certification Practice Statement. The CA SHALL maintain a continuous 24x7 ability to accept and respond to revocation requests and Certificate Problem Reports.
 
-The CA SHALL publicly disclose an email address through its online repository that Subscribers, Relying Parties, Application Software Suppliers, and other third parties may use to submit Certificate Problem Reports. The CA SHALL monitor this email address 24x7. A Certificate Problem Report is considered received by the CA when sent to the specified email address.
+The CA SHALL provide Subscribers, Relying Parties, Application Software Suppliers, and other third parties with clear instructions for reporting suspected Private Key Compromise, Certificate misuse, or other types of fraud, compromise, misuse, inappropriate conduct, or any other matter related to Certificates. The CA SHALL publicly disclose the instructions through a readily accessible online means and in section 1.5.2 of their CPS.
 
 ### 4.9.4 Revocation request grace period
 No stipulation.
