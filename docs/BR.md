@@ -862,8 +862,8 @@ The CA SHALL revoke a Certificate within 24 hours if:
 
 1. The Subscriber requests in writing that the CA revoke the Certificate;
 2. The Subscriber notifies the CA that the original certificate request was not authorized and does not retroactively grant authorization;
-3. The CA obtains evidence that the Subscriber's Private Key corresponding to the Public Key in the Certificate suffered a Key Compromise.
-4. The CA obtains evidence that the validation of domain authorization or control for any Fully-Qualified Domain Name or IP address in the Certificate should not be relied upon
+3. The CA obtains evidence that the Subscriber's Private Key corresponding to the Public Key in the Certificate suffered a Key Compromise; or
+4. The CA obtains evidence that the validation of domain authorization or control for any Fully-Qualified Domain Name or IP address in the Certificate should not be relied upon.
 
 The CA SHOULD revoke a certificate within 24 hours and MUST revoke a Certificate within 5 days if one or more of the following occurs:
 
@@ -877,9 +877,9 @@ The CA SHOULD revoke a certificate within 24 hours and MUST revoke a Certificate
 CA's Certificate Policy or Certification Practice Statement;
 8. The CA determines that any of the information appearing in the Certificate is inaccurate;
 9. The CA's right to issue Certificates under these Requirements expires or is revoked or terminated, unless the CA has made arrangements to continue maintaining the CRL/OCSP Repository;
-10. Revocation is required by the CA's Certificate Policy and/or Certification Practice Statement; or
+10. Revocation is required by the CA's Certificate Policy and/or Certification Practice Statement;
 11. The technical content or format of the Certificate presents an unacceptable risk to Application Software Suppliers or Relying Parties (e.g. the CA/Browser Forum might determine that a deprecated cryptographic/signature algorithm or key size presents an unacceptable risk and that such Certificates should be revoked and replaced by CAs within a given period of time);
-12. The CA is made aware of a vulnerability that exposes the Subscriber's Private Key to compromise;
+12. The CA is made aware of a vulnerability that exposes the Subscriber's Private Key to compromise; or
 13. The CA is made aware that the Subscriber's Private Key is being publicly distributed in a software package.
 
 #### 4.9.1.2 Reasons for Revoking a Subordinate CA Certificate
