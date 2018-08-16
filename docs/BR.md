@@ -1492,22 +1492,41 @@ f. extKeyUsage (required)
 
     Either the value id-kp-serverAuth [RFC5280] or id-kp-clientAuth [RFC5280] or both values MUST be present. id-kp-emailProtection [RFC5280] MAY be present. Other values SHOULD NOT be present.
 
- g.   cabf-BRValidationMethod (2.23.140.1.11) (required on or after April 1, 2019)
+ g.   cabf-BRDomainValidation (2.23.140.1.11) (required on or after July 1, 2019 if the certificate contains any subjectAlternativeName entries of type DNSName)
 
-This extension contains a list of one or more numeric values that assert every distinct method performed by the CA to validate domain control or ownership of each FQDN contained in the certificate's subjectAlternativeName. If an FQDN has been validated using multiple methods, the CA MAY assert more than one of the methods. This extension SHOULD NOT be marked critical.
+This extension contains a binary encoding of every distinct method performed by the CA to validate domain control or ownership of each FQDN contained in the certificate's subjectAlternativeName. If an FQDN has been validated using multiple methods, the CA MAY assert more than one of the methods. This extension SHOULD NOT be marked critical.
 
-The values representing validation methods SHALL be defined as follows:
-    * The subsection number of section 3.2.2.4 corresponding to the domain validation method that was used to validate one or more subjectAlternativeNames in the certificate (e.g. '2' represents the method described in section 3.2.2.4.2); or,
-    
-    * The subsection number of section 3.2.2.5 corresponding to the IP address validation method that was used to validate one or more subjectAlternativeNames in the certificate added to the number '500' (e.g. '501' represents the method described in section 3.2.2.5.1).
+Bits representing the use of one or more section 3.2.2.4 domain validation methods MUST be encoded in this extension as follows:
 
-Values representing validation methods MUST be encoded in this extension as follows:
+The leading bit in position 0 is reserved. Each subsequent bit represents the corresponding subsection of section 3.2.2.4 used to perform domain validation. The corresponding bit MUST be set to indicate that the method was used for validation.
 
-cabf-BRValidationMethod OBJECT IDENTIFIER ::= { 2.23.140.1.11 }
+BRDomainValidationMethods ::= BIT STRING {
+  unused (0),
+  method3.2.2.4.1 (1),
+  ...
+}
 
-BRValidationMethodSyntax ::= SEQUENCE SIZE (1..MAX) OF DomainOrIpAddressValidationMethodId
+id-cabf-BRDomainValidation OBJECT IDENTIFIER ::= { 2.23.140.1.11 }
 
-DomainOrIpAddressValidationMethodId ::= INTEGER
+ext-cabf-BRDomainValidation EXTENSION ::= { SYNTAX BRDomainValidationMethods IDENTIFIED BY id-cabf-BRDomainValidation }
+
+ h.   cabf-BRIPAddressValidation (2.23.140.1.12) (required on or after July 1, 2019 if the certificate contains any subjectAlternativeName entries of type IPAddress)
+
+This extension contains a binary encoding of every distinct method performed by the CA to validate IP address control or ownership of each IP address contained in the certificate's subjectAlternativeName. If an IP address has been validated using multiple methods, the CA MAY assert more than one of the methods. This extension SHOULD NOT be marked critical.
+
+Bits representing the use of one or more section 3.2.2.5 IP address validation methods MUST be encoded in this extension as follows:
+
+The leading bit in position 0 is reserved. Each subsequent bit represents the corresponding subsection of section 3.2.2.5 used to perform domain validation. The corresponding bit MUST be set to indicate that the method was used for validation.
+
+BRIPAddressValidationMethods ::= BIT STRING {
+  unused (0),
+  method3.2.2.5.1 (1),
+  ...
+}
+
+id-cabf-BRIPAddressValidation OBJECT IDENTIFIER ::= { 2.23.140.1.12 }
+
+ext-cabf-BRIPAddressValidation EXTENSION ::= { SYNTAX BRIPAddressValidationMethods IDENTIFIED BY id-cabf-BRIPAddressValidation }
 
 #### 7.1.2.4 All Certificates
 All other fields and extensions MUST be set in accordance with RFC 5280. The CA SHALL NOT issue a Certificate that contains a keyUsage flag, extendedKeyUsage value, Certificate extension, or other data not specified in section 7.1.2.1, 7.1.2.2, or 7.1.2.3  unless the CA is aware of a reason for including the data in the Certificate.
