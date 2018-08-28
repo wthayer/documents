@@ -277,7 +277,7 @@ No stipulation.
 
 **Issuing CA**: In relation to a particular Certificate, the CA that issued the Certificate. This could be either a Root CA or a Subordinate CA.
 
-**Key Compromise**: A Private Key is said to be compromised if its value has been disclosed to an unauthorized person or an unauthorized person has had access to it. A Private Key is also considered compromised if methods have been developed that can easily calculate it based on the Public Key (such as a Debian weak key, see http://wiki.debian.org/SSLkeys) or if there is clear evidence that the specific method used to generate the Private Key was flawed.
+**Key Compromise**: A Private Key is said to be compromised if its value has been disclosed to an unauthorized person or an unauthorized person has had access to it.
 
 **Key Generation Script**: A documented plan of procedures for the generation of a CA Key Pair **.**
 
@@ -878,7 +878,7 @@ CA's Certificate Policy or Certification Practice Statement;
 8. The CA determines that any of the information appearing in the Certificate is inaccurate;
 9. The CA's right to issue Certificates under these Requirements expires or is revoked or terminated, unless the CA has made arrangements to continue maintaining the CRL/OCSP Repository;
 10. Revocation is required by the CA's Certificate Policy and/or Certification Practice Statement; or
-11. The CA is made aware of a practical technique that exposes the Subscriber's Private Key to compromise.
+11. The CA is made aware of a demonstrated or proven method that exposes the Subscriber's Private Key to compromise, methods have been developed that can easily calculate it based on the Public Key (such as a Debian weak key, see http://wiki.debian.org/SSLkeys), or if there is clear evidence that the specific method used to generate the Private Key was flawed.
 
 #### 4.9.1.2 Reasons for Revoking a Subordinate CA Certificate
 The Issuing CA SHALL revoke a Subordinate CA Certificate within seven (7) days if one or more of the following occurs:
