@@ -858,7 +858,7 @@ No stipulation.
 ### 4.9.1 Circumstances for revocation
 
 #### 4.9.1.1 Reasons for Revoking a Subscriber Certificate
-The CA SHALL revoke a Certificate within 24 hours if:
+The CA SHALL revoke a Certificate within 24 hours if one or more of the following occurs:
 
 1. The Subscriber requests in writing that the CA revoke the Certificate;
 2. The Subscriber notifies the CA that the original certificate request was not authorized and does not retroactively grant authorization;
