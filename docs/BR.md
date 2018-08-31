@@ -875,7 +875,7 @@ The CA SHOULD revoke a certificate within 24 hours and MUST revoke a Certificate
 6. The CA is made aware of a material change in the information contained in the Certificate;
 7. The CA is made aware that the Certificate was not issued in accordance with these Requirements or the
 CA's Certificate Policy or Certification Practice Statement;
-8. The CA determines that any of the information appearing in the Certificate is inaccurate;
+8. The CA determines or is made aware that any of the information appearing in the Certificate is inaccurate;
 9. The CA's right to issue Certificates under these Requirements expires or is revoked or terminated, unless the CA has made arrangements to continue maintaining the CRL/OCSP Repository;
 10. Revocation is required by the CA's Certificate Policy and/or Certification Practice Statement; or
 11. The CA is made aware of a demonstrated or proven method that exposes the Subscriber's Private Key to compromise, methods have been developed that can easily calculate it based on the Public Key (such as a Debian weak key, see http://wiki.debian.org/SSLkeys), or if there is clear evidence that the specific method used to generate the Private Key was flawed.
