@@ -1502,18 +1502,18 @@ The leading bit in position 0 is reserved. Each subsequent bit represents the co
 
 BRDomainValidationMethods ::= BIT STRING {
   unused (0),
-  method32241 (1),
-  method32242 (2),
-  method32243 (3),
-  method32244 (4),
-  method32245 (5),
-  method32246 (6),
-  method32247 (7),
-  method32248 (8),
-  method32249 (9),
-  method322410 (10),
-  method322411 (11),
-  method322412 (12)
+  method3224_1 (1),
+  method3224_2 (2),
+  method3224_3 (3),
+  method3224_4 (4),
+  method3224_5 (5),
+  method3224_6 (6),
+  method3224_7 (7),
+  method3224_8 (8),
+  method3224_9 (9),
+  method3224_10 (10),
+  method3224_11 (11),
+  method3224_12 (12)
 }
 
 id-cabf-BRDomainValidation OBJECT IDENTIFIER ::= { 2.23.140.1.11 }
@@ -1530,10 +1530,10 @@ The leading bit in position 0 is reserved. Each subsequent bit represents the co
 
 BRIPAddressValidationMethods ::= BIT STRING {
   unused (0),
-  method32251 (1),
-  method32252 (2),
-  method32253 (3),
-  method32254 (4),
+  method3225_1 (1),
+  method3225_2 (2),
+  method3225_3 (3),
+  method3225_4 (4),
 }
 
 id-cabf-BRIPAddressValidation OBJECT IDENTIFIER ::= { 2.23.140.1.12 }
