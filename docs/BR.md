@@ -1500,21 +1500,21 @@ Bits representing the use of one or more section 3.2.2.4 domain validation metho
 
 The leading bit in position 0 is reserved. Each subsequent bit represents the corresponding subsection of section 3.2.2.4 used to perform domain validation. The corresponding bit MUST be set to indicate that the method was used for validation.
 
-BRDomainValidationMethods ::= BIT STRING {. 
-  unused (0),  
-  method3224_1 (1),  
-  method3224_2 (2),  
-  method3224_3 (3),  
-  method3224_4 (4),  
-  method3224_5 (5),  
-  method3224_6 (6),  
-  method3224_7 (7),  
-  method3224_8 (8),  
-  method3224_9 (9),  
-  method3224_10 (10),  
-  method3224_11 (11),  
-  method3224_12 (12). 
-}
+    BRDomainValidationMethods ::= BIT STRING {
+      unused (0),  
+      method3224_1 (1),
+      method3224_2 (2),
+      method3224_3 (3),
+      method3224_4 (4),
+      method3224_5 (5),
+      method3224_6 (6),
+      method3224_7 (7),
+      method3224_8 (8),
+      method3224_9 (9),
+      method3224_10 (10),
+      method3224_11 (11),
+      method3224_12 (12)
+    }
 
 id-cabf-BRDomainValidation OBJECT IDENTIFIER ::= { 2.23.140.1.11 }
 
@@ -1528,13 +1528,13 @@ Bits representing the use of one or more section 3.2.2.5 IP address validation m
 
 The leading bit in position 0 is reserved. Each subsequent bit represents the corresponding subsection of section 3.2.2.5 used to perform domain validation. The corresponding bit MUST be set to indicate that the method was used for validation.
 
-BRIPAddressValidationMethods ::= BIT STRING {. 
-  unused (0),  
-  method3225_1 (1),  
-  method3225_2 (2),  
-  method3225_3 (3),  
-  method3225_4 (4),  
-}
+    BRIPAddressValidationMethods ::= BIT STRING {
+      unused (0),
+      method3225_1 (1),
+      method3225_2 (2),
+      method3225_3 (3),
+      method3225_4 (4),
+    }
 
 id-cabf-BRIPAddressValidation OBJECT IDENTIFIER ::= { 2.23.140.1.12 }
 
