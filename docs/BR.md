@@ -1515,10 +1515,10 @@ The leading bit in position 0 is reserved. Each subsequent bit represents the co
       method3224_11 (11),
       method3224_12 (12)
     }
-
-id-cabf-BRDomainValidation OBJECT IDENTIFIER ::= { 2.23.140.1.11 }
-
-ext-cabf-BRDomainValidation EXTENSION ::= { SYNTAX BRDomainValidationMethods IDENTIFIED BY id-cabf-BRDomainValidation }
+    
+    id-cabf-BRDomainValidation OBJECT IDENTIFIER ::= { 2.23.140.1.11 }
+    
+    ext-cabf-BRDomainValidation EXTENSION ::= { SYNTAX BRDomainValidationMethods IDENTIFIED BY id-cabf-BRDomainValidation }
 
  h.   cabf-BRIPAddressValidation (2.23.140.1.12) (required on or after July 1, 2019 if the certificate contains any subjectAlternativeName entries of type IPAddress)
 
@@ -1535,10 +1535,10 @@ The leading bit in position 0 is reserved. Each subsequent bit represents the co
       method3225_3 (3),
       method3225_4 (4),
     }
-
-id-cabf-BRIPAddressValidation OBJECT IDENTIFIER ::= { 2.23.140.1.12 }
-
-ext-cabf-BRIPAddressValidation EXTENSION ::= { SYNTAX BRIPAddressValidationMethods IDENTIFIED BY id-cabf-BRIPAddressValidation }
+    
+    id-cabf-BRIPAddressValidation OBJECT IDENTIFIER ::= { 2.23.140.1.12 }
+    
+    ext-cabf-BRIPAddressValidation EXTENSION ::= { SYNTAX BRIPAddressValidationMethods IDENTIFIED BY id-cabf-BRIPAddressValidation }
 
 #### 7.1.2.4 All Certificates
 All other fields and extensions MUST be set in accordance with RFC 5280. The CA SHALL NOT issue a Certificate that contains a keyUsage flag, extendedKeyUsage value, Certificate extension, or other data not specified in section 7.1.2.1, 7.1.2.2, or 7.1.2.3  unless the CA is aware of a reason for including the data in the Certificate.
