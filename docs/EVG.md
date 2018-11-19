@@ -512,9 +512,19 @@ Postal code: subject:postalCode (OID:  2.5.4.17)
 
 **Contents:**   This field MUST contain the address of the physical location of the Subject's Place of Business.
 
-### 9.2.8.  Other Subject Attributes
+### 9.2.8.  Subject Organizational Unit Name Field
 
-All other optional attributes, when present within the subject field, MUST contain information that has been verified by the CA. CAs SHALL NOT include Fully-Qualified Domain Names in Subject attributes except as specified in Sections 9.2.1 and SHALL NOT include any Subject Organization Information except as specified in Section 9.2. Optional subfields within the Subject field MUST either contain information verified by the CA or MUST be left empty.  Metadata such as '.', '-', and ' ' characters, and/or any other indication that the field is empty, absent or incomplete, MUST not be used.
+**Certificate field:** subject:organizationalUnitName (OID 2.5.4.11)
+
+**Required/Optional:** Optional
+
+**Contents:** The CA SHALL implement a process that prevents an OU attribute from including a name, DBA, tradename, trademark, address, location, or other text that refers to a specific natural person or Legal Entity unless the CA has verified this information in accordance with Section 11.
+
+### 9.2.9.  Other Subject Attributes
+
+CAs SHALL NOT include Fully-Qualified Domain Names in Subject attributes except as specified in Sections 9.2.1 and SHALL NOT include any Subject Organization Information except as specified in Section 9.2.
+
+All optional attributes, when present within the subject field, MUST contain information that has been verified by the CA. Optional attributes within the Subject field MUST either contain information verified by the CA or MUST be left empty.  Metadata such as '.', '-', and ' '  (i.e. space) characters, and/or any other indication that the field is empty, absent or incomplete, MUST NOT be used.
 
 ## 9.3.  Certificate Policy Identification
 
