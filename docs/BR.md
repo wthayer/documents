@@ -1531,7 +1531,7 @@ The content of the Certificate Issuer Distinguished Name field MUST match the Su
 #### 7.1.4.2 Subject Information - Subscriber Certificates
 By issuing the Certificate, the CA represents that it followed the procedure set forth in its Certificate Policy and/or Certification Practice Statement to verify that, as of the Certificate's issuance date, all of the Subject Information was accurate. CAs SHALL NOT include a Domain Name or IP Address in a Subject attribute except as specified in Section 3.2.2.4 or Section 3.2.2.5.
 
-Subject attributes MUST NOT contain metadata such as '.', '-', and ' ' (i.e. space) characters, and/or any other indication that the value is absent, incomplete, or not applicable.
+Subject attributes MUST NOT contain only metadata such as '.', '-', and ' ' (i.e. space) characters, and/or any other indication that the value is absent, incomplete, or not applicable.
 
 #### 7.1.4.2.1 Subject Alternative Name Extension
 Certificate Field: extensions:subjectAltName
@@ -1587,7 +1587,7 @@ Optional.
 The CA SHALL implement a process that prevents an OU attribute from including a name, DBA, tradename, trademark, address, location, or other text that refers to a specific natural person or Legal Entity unless the CA has verified this information in accordance with Section 3.2 and the Certificate also contains subject:organizationName, subject:givenName, subject:surname, subject:localityName, and subject:countryName attributes, also verified in accordance with Section 3.2.2.1.
 
 j. Other Subject Attributes
-Other optional attributes MAY be present within the subject field. If present, other optional attributes MUST contain information that has been verified by the CA.
+Other attributes MAY be present within the subject field. If present, other attributes MUST contain information that has been verified by the CA.
 
 #### 7.1.4.3. Subject Information - Root Certificates and Subordinate CA Certificates
 By issuing a Subordinate CA Certificate, the CA represents that it followed the procedure set forth in its Certificate Policy and/or Certification Practice Statement to verify that, as of the Certificate's issuance date, all of the Subject Information was accurate.
