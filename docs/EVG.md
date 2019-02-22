@@ -518,7 +518,7 @@ Postal code: subject:postalCode (OID:  2.5.4.17)
 
 **Required/Optional:** Optional
 
-**Contents:** The CA SHALL implement a process that prevents an OU attribute from including a name, DBA, tradename, trademark, address, location, or other text that refers to a specific natural person or Legal Entity unless the CA has verified this information in accordance with Section 11. Metadata such as '.', '-', and ' ' (i.e. space) characters, and/or any other indication that this field is empty, absent or incomplete, MUST NOT be used.
+**Contents:** The CA SHALL implement a process that prevents an OU attribute from including a name, DBA, tradename, trademark, address, location, or other text that refers to a specific natural person or Legal Entity unless the CA has verified this information in accordance with Section 11. This field MUST NOT contain only metadata such as '.', '-', and ' ' (i.e. space) characters, and/or any other indication that the value is absent, incomplete, or not applicable.
 
 ### 9.2.9.  Other Subject Attributes
 
