@@ -357,7 +357,7 @@ The Participant represents and warrants that either: (a) it has the authority to
 
 
 
-y: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+By: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
        (Signature)
 
@@ -374,8 +374,6 @@ Date: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 **Exhibit B**
 
 **CAB Forum Code of Conduct (the "Code")**
-
-The CAB Forum (the “Forum") is comprised of a global group of professionals with differences in language, skills, expertise, experience, and backgrounds. To maintain a professional and productive environment, it is necessary for Members of the Forum to follow the letter and spirit of this Code. This Code applies to all official Forum activities, such as meetings, teleconferences, mailing lists, conferences, and other Forum functions. The Forum is committed to maintaining a professional and respectful environment.
 
 The CAB Forum (the "Forum") is comprised of a global group of professionals with differences in language, skills, expertise, experience, and backgrounds.  To maintain a professional and productive environment, it is necessary for Members of the Forum to follow the letter and spirit of this Code.  This Code applies to all official Forum activities, such as meetings, teleconferences, mailing lists, conferences, and other Forum functions.  The Forum is committed to maintaining a professional and respectful environment.
 
@@ -465,7 +463,6 @@ The Working Group will deliver the following:
 [describe]
 
 2.2 Other Deliverables
-
 The Working Group may work on related deliverables and non-normative documents, such as:
 [describe]
 [describe]
