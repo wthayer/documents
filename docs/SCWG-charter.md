@@ -15,6 +15,7 @@ Upon approval of the CAB Forum by ballot, the Server Certificate Working Group (
 **Anticipated End Date:** None.
 
 **Members eligible to participate:**
+
 (a) The Working Group shall consist of two classes of voting members, the Certificate Issuers and the Certificate Consumers. The CA Class shall consist of eligible Certificate Issuers and Root Certificate Issuers meeting the following criteria:
 
    1) **Certificate Issuer:** The member organization operates a certification authority that has a publicly-available audit report or attestation statement in accordance with one of the following schemes:
