@@ -30,7 +30,7 @@ An antitrust compliance statement shall be read at the start of all Forum Meetin
 
 “As you know, this meeting includes companies that compete against one another. This meeting is intended to discuss technical standards related to the provision of existing and new types of digital certificates without restricting competition in developing and marketing such certificates. This meeting is not intended to share competitively-sensitive information among competitors, and therefore all participants agree not to discuss or exchange information related to:
 
-(a) Pricing policies, pricing formulas, prices or other terms of sale;
+    (a) Pricing policies, pricing formulas, prices or other terms of sale;
 
 (b) Costs, cost structures, profit margins,
 
