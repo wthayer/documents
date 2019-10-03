@@ -1082,9 +1082,8 @@ In the latter case, the OCSP signing Certificate MUST contain an extension of ty
 defined by RFC6960.
 
 ### 4.9.10 On-line revocation checking requirements
-Effective 1 January 2013, the CA SHALL support an OCSP capability using the GET method for Certificates issued
-in accordance with these Requirements.
-
+The CA SHALL support an OCSP capability using the GET method for Certificates issued in accordance with these Requirements.
+    
 For the status of Subscriber Certificates:
 
 The CA SHALL update information provided via an Online Certificate Status Protocol at least every four days. OCSP responses from this service MUST have a maximum expiration time of ten days.
@@ -1093,9 +1092,7 @@ For the status of Subordinate CA Certificates:
 
 The CA SHALL update information provided via an Online Certificate Status Protocol at least (i) every twelve months and (ii) within 24 hours after revoking a Subordinate CA Certificate.
 
-If the OCSP responder receives a request for status of a certificate that has not been issued, then the responder SHOULD NOT respond with a "good" status. The CA SHOULD monitor the responder for such requests as part of its security response procedures.
-
-Effective 1 August 2013, OCSP responders for CAs which are not Technically Constrained in line with Section 7.1.5 MUST NOT respond with a "good" status for such certificates.
+If the OCSP responder receives an OCSP request but has no record of ever having issued any certificate with the certificate serial number in that request, using any current or previous issuing key for the CA subject, then the responder SHOULD NOT respond with a "good" status. OCSP responders for CAs that are not Technically Constrained in line with Section 7.1.5 MUST NOT respond with a "good" status for such certificates. The CA SHOULD monitor the responder for such requests as part of its security response procedures.
 
 ### 4.9.11 Other forms of revocation advertisements available
 If the Subscriber Certificate is for a high-traffic FQDN, the CA MAY rely on stapling, in accordance with [RFC4366], to distribute its OCSP responses. In this case, the CA SHALL ensure that the Subscriber "staples" the OCSP response for the Certificate in its TLS handshake. The CA SHALL enforce this requirement on the Subscriber either contractually, through the Subscriber Agreement or Terms of Use, or by technical review measures implemented by the CA.
@@ -1630,7 +1627,7 @@ a. Extensions that do not apply in the context of the public Internet (such as a
 b. semantics that, if included, will mislead a Relying Party about the certificate information verified by the CA (such as including extendedKeyUsage value for a smart card, where the CA is not able to verify that the corresponding Private Key is confined to such hardware due to remote issuance).
 
 #### 7.1.2.5 Application of RFC 5280
-For purposes of clarification, a Precertificate, as described in RFC 6962 - Certificate Transparency, shall not be considered to be a "certificate" subject to the requirements of RFC 5280 - Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile under these Baseline Requirements.
+For purposes of clarification, any Precertificate MAY have the same serial number as exactly one certificate that is not a Precertificate, provided that the two are related as described in RFC 6962 - Certificate Transparency. This is a modification of the uniqueness requirements of RFC 5280  - Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile section 4.1.2.2 under these Baseline Requirements.
 
 ### 7.1.3 Algorithm object identifiers
 Effective 1 January 2016, CAs MUST NOT issue any new Subscriber certificates or Subordinate CA certificates using the SHA-1 hash algorithm. CAs MAY continue to sign certificates to verify OCSP responses using SHA1 until 1 January 2017. This Section 7.1.3 does not apply to Root CA or CA cross certificates. CAs MAY continue to use their existing SHA-1 Root Certificates. SHA-2 Subscriber certificates SHOULD NOT chain up to a SHA-1Subordinate CA Certificate.
